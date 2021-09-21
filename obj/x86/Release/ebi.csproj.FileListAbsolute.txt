@@ -1,0 +1,3 @@
+/home/bastian/Projects/langs/ebi/bin/Release/ebi.exe
+/home/bastian/Projects/langs/ebi/obj/x86/Release/ebi.csproj.CoreCompileInputs.cache
+/home/bastian/Projects/langs/ebi/obj/x86/Release/ebi.exe

@@ -1,0 +1,6 @@
+/home/bastian/Projects/langs/ebi/bin/Debug/ebi.exe
+/home/bastian/Projects/langs/ebi/bin/Debug/ebi.pdb
+/home/bastian/Projects/langs/ebi/obj/x86/Debug/ebi.csprojAssemblyReference.cache
+/home/bastian/Projects/langs/ebi/obj/x86/Debug/ebi.csproj.CoreCompileInputs.cache
+/home/bastian/Projects/langs/ebi/obj/x86/Debug/ebi.exe
+/home/bastian/Projects/langs/ebi/obj/x86/Debug/ebi.pdb
