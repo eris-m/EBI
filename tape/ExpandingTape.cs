@@ -1,4 +1,4 @@
-﻿/*
+/*
  * This file is part of EBI.
  *
  * EBI is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, 
@@ -9,16 +9,21 @@
  *
  * You should have received a copy of the GNU General Public License along with EBI. If not, see <https://www.gnu.org/licenses/>.
  */ 
+namespace ebi.tape;
 
-using System;
-using System.Collections;
-using System.IO;
-using ebi;
-using ebi.tape;
+public sealed class ExpandingTape : Tape
+{
+    public ExpandingTape() : base() {}
+    public ExpandingTape(int size = DefaultSize) : base(size) {}
+    
+    protected override void IndexOverflow(int amount)
+    {
+        var newCells = new int[amount];
+        Cells.AddRange(newCells);
+    }
 
-// test code, print 'L'
-var codeString = "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.";
-var code = Command.CommandsInString(codeString);
-
-var machine = new Machine<WrappingTape>(code);
-machine.Execute();
+    protected override void IndexUnderflow(int amount)
+    {
+        Index = Cells.Count;
+    }
+}
