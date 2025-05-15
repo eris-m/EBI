@@ -1,6 +1,6 @@
 ## EBI
-### Eris's Brainfuck Interpreter
-A simple brainfuck interpreter made in c#
+### Eris's Brainf\*\*\* Interpreter
+A simple brainf\*\*\* interpreter made in c#
 
 TODO:
  * Better cli
